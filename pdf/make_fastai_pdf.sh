@@ -11,7 +11,8 @@ echo "#License for Documentation" > license_heading.md
 
 cd docs_src
 rm -f pdf/fastai_docu.pdf
-parallel jupyter nbconvert --to markdown ::: *.ipynb
+parallel jupyter nbconvert --to markdown  ::: *.ipynb
+
 for f in *.md; do
 	sed -i '/VBox/d' $f
 done
