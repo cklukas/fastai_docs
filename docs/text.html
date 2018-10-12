@@ -39,7 +39,7 @@ summary: "Application to NLP, including ULMFiT fine-tuning"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's start with a quick end-to-end example of training a model. We'll train a sentiment classifer on a sample of the popular IMDb data, showing 4 steps:</p>
+<p>Let's start with a quick end-to-end example of training a model. We'll train a sentiment classifier on a sample of the popular IMDb data, showing 4 steps:</p>
 <ol>
 <li>Reading and viewing the IMDb data</li>
 <li>Getting your data ready for modeling</li>
@@ -181,7 +181,7 @@ summary: "Application to NLP, including ULMFiT fine-tuning"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Labels are encoded (though we can tell 1 seems to be positive from the bits of comments we see), and the file classes.txt contain the correspondance between index and names.</p>
+<p>Labels are encoded (though we can tell 1 seems to be positive from the bits of comments we see), and the file classes.txt contain the correspondence between index and names.</p>
 
 </div>
 </div>
@@ -264,10 +264,10 @@ summary: "Application to NLP, including ULMFiT fine-tuning"
 
  
  
-<div id="9a74abef-db07-4ded-b8a0-3932be87fb89"></div>
+<div id="675384c1-1190-4a67-af88-b5bd3e189b1f"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9a74abef-db07-4ded-b8a0-3932be87fb89');
+var element = $('#675384c1-1190-4a67-af88-b5bd3e189b1f');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -283,10 +283,10 @@ var element = $('#9a74abef-db07-4ded-b8a0-3932be87fb89');
 
  
  
-<div id="42895666-a752-4330-82fb-d09ee01b4c89"></div>
+<div id="fac42f29-6e08-4d04-978c-a74c91a0c4be"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#42895666-a752-4330-82fb-d09ee01b4c89');
+var element = $('#fac42f29-6e08-4d04-978c-a74c91a0c4be');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -310,7 +310,7 @@ var element = $('#42895666-a752-4330-82fb-d09ee01b4c89');
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that to avoid redoing this step (which can be quite time-consuming if you have a very large dataset), the fastai library has created a <code>tmp</code> directory in the folder given, to store the tokens (in <code>_tok.npy</code> files), the labels (in <code>_lbl.npy</code> files), the ids of the tokens (in <code>_id.npy</code> files) and the dictionary (<code>itos.pkl</code>). When you reexecute the line in the future, it will directly load that data.</p>
-<p>To get a <a href="/data.html#DataBunch"><code>DataBunch</code></a> quickly, there are also several factory methods depending on how our data is structured. They are all detailed in <a href="/text.data.html#text.data"><code>transform.data</code></a>, here we'll use <a href="/text.data.html#text_data_from_csv"><code>text_data_from_csv</code></a>.</p>
+<p>To get a <a href="/data.html#DataBunch"><code>DataBunch</code></a> quickly, there are also several factory methods depending on how our data is structured. They are all detailed in <a href="/text.data.html#text.data"><code>text.data</code></a>, here we'll use <a href="/text.data.html#text_data_from_csv"><code>text_data_from_csv</code></a>.</p>
 
 </div>
 </div>
@@ -348,10 +348,10 @@ var element = $('#42895666-a752-4330-82fb-d09ee01b4c89');
 
  
  
-<div id="646569b7-917e-45f4-9f2c-5415c1d81a81"></div>
+<div id="47b7c2c7-f722-485a-b8cc-a38a008b9b45"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#646569b7-917e-45f4-9f2c-5415c1d81a81');
+var element = $('#47b7c2c7-f722-485a-b8cc-a38a008b9b45');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -367,10 +367,10 @@ var element = $('#646569b7-917e-45f4-9f2c-5415c1d81a81');
 
  
  
-<div id="5f03a904-69fb-4fb1-b7d8-910a2c1ac9ea"></div>
+<div id="f16b6b88-283d-4e3b-a240-a8f838d37469"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#5f03a904-69fb-4fb1-b7d8-910a2c1ac9ea');
+var element = $('#f16b6b88-283d-4e3b-a240-a8f838d37469');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -455,10 +455,10 @@ var element = $('#5f03a904-69fb-4fb1-b7d8-910a2c1ac9ea');
 
  
  
-<div id="43c33874-cf4e-4c40-9f69-621f7d38da65"></div>
+<div id="236a5a67-7d96-4195-9daa-60e05db6cfe2"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#43c33874-cf4e-4c40-9f69-621f7d38da65');
+var element = $('#236a5a67-7d96-4195-9daa-60e05db6cfe2');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -512,10 +512,10 @@ epoch  train loss  valid loss  accuracy
 
  
  
-<div id="ae826ca4-4cf3-4bed-b347-3f8ab580d471"></div>
+<div id="785e186c-3c48-4e12-b10c-7a85023694eb"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#ae826ca4-4cf3-4bed-b347-3f8ab580d471');
+var element = $('#785e186c-3c48-4e12-b10c-7a85023694eb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -600,10 +600,10 @@ epoch  train loss  valid loss  accuracy
 
  
  
-<div id="7e3640bc-61ef-4848-98e3-5e6ad7469b20"></div>
+<div id="4a3ff4ed-b4b3-457c-9b26-a62aada97cf5"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#7e3640bc-61ef-4848-98e3-5e6ad7469b20');
+var element = $('#4a3ff4ed-b4b3-457c-9b26-a62aada97cf5');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -657,10 +657,10 @@ epoch  train loss  valid loss  accuracy
 
  
  
-<div id="e12eaa3e-d2d4-4b7e-a957-d48f34b6e79b"></div>
+<div id="42d84287-90c8-41c1-8aaa-14c933f03fb0"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e12eaa3e-d2d4-4b7e-a957-d48f34b6e79b');
+var element = $('#42d84287-90c8-41c1-8aaa-14c933f03fb0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -707,10 +707,10 @@ epoch  train loss  valid loss  accuracy
 
  
  
-<div id="384ec6e6-3d15-4fb8-8d94-9bf1a877fd2f"></div>
+<div id="0c9acce5-8edc-4932-bbe2-283af3873baf"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#384ec6e6-3d15-4fb8-8d94-9bf1a877fd2f');
+var element = $('#0c9acce5-8edc-4932-bbe2-283af3873baf');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}

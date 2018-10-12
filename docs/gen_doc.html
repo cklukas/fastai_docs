@@ -78,7 +78,7 @@ summary: "Documentation modules overview"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you want to help us and contribute to the docs, you jsut have to make modifications to the source notebooks, our scripts will then automatically convert them to HTML. There is just one script to run after cloning the fastai_docs repo, to ensure that everything works properly. The rest of this page goes more in depth about all the functionalities this module offers, but if you jsut want to add a sentence or correct a typo, make a PR with the notebook changed and we'll take care of the rest.</p>
+<p>If you want to help us and contribute to the docs, you just have to make modifications to the source notebooks, our scripts will then automatically convert them to HTML. There is just one script to run after cloning the fastai_docs repo, to ensure that everything works properly. The rest of this page goes more in depth about all the functionalities this module offers, but if you just want to add a sentence or correct a typo, make a PR with the notebook changed and we'll take care of the rest.</p>
 
 </div>
 </div>
@@ -101,7 +101,12 @@ tools/run-after-git-clone
 <p>This will take care of everything that is explained in the following two sections. We'll tell you what they do, but you need to execute just this one script.</p>
 <p>Note: windows users, not using bash emulation, will need to invoke the command as:</p>
 
-<pre><code>python tools\run-after-git-clone</code></pre>
+<pre><code>python tools\run-after-git-clone
+
+</code></pre>
+<p>On windows as well, the simlink between the imgs folder in docs_src (where the notebooks are) and docs won't work. You will need to remove the borken link in docs_src (called imgs), execute cmd.exe as administrator, then, in the docs_src folder, execute</p>
+
+<pre><code>mklink /d imgs ..\docs\imgs</code></pre>
 
 </div>
 </div>
